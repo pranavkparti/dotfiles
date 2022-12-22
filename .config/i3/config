@@ -54,6 +54,7 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi  -show drun run window ssh
 
 # change focus
 bindsym $mod+j focus left
@@ -220,7 +221,10 @@ exec_always --no-startup-id /usr/bin/feh --bg-scale ~/Dropbox/Wallpapers/space_p
 #exec_always --no-startup-id /usr/bin/feh --bg-fill ~/Dropbox/Wallpapers/forest_light.jpg
 
 # compositor 
-#picom
+# picom
+#exec_always --no-startup-id picom -bc
+
+#compton
 exec_always --no-startup-id "picom --config /home/pranava/.config/picom.conf"
 
 #scratchpad
